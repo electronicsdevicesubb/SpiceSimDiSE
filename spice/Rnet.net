@@ -1,0 +1,9 @@
+* Z:\home\icarosix\WinData\Cursos\Dispositivos y Sistemas Electronicos\LTSpice\PassiveElements\spice\Rnet.asc
+R1 N002 N001 1k
+V1 N001 0
+R2 0 N002 2k
+R3 Vout N002 1k
+R4 0 Vout 1k
+.tf V(Vout) V1
+.backanno
+.end

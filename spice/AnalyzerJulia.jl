@@ -2,9 +2,11 @@ using Plots;
 using DataFrames;
 using CSV;
 
-df = readtable("VoltageDividerMC.txt", separator = '\t')
+#df = readtable("VoltageDividerMC.txt", separator = '\t')
 
-histogram(df.V_vout_)
+df = CSV.read("VoltageDividerMC.txt", DataFrame)
+
+histogram(df.Vout)
 
 
 
